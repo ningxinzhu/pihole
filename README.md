@@ -1,7 +1,8 @@
 #Installing and configuring Pi-hole v2.10 on the Raspberry Pi 3
 
-Written 22 Dec 2016 by @github/ningxinzhu ...
-though you can find most of this on [the Pi-hole FAQ, especially its page about pihole commands](https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738), /r/raspberry_pi, and /r/pihole. Thank God for good documentation and reddit.
+Written 22 Dec 2016 by @ningxinzhu ... though you can find most of this on [the Pi-hole FAQ, especially its page about pihole commands](https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738), /r/raspberry_pi, and /r/pihole. Thank God for good documentation and reddit.
+
+[My Pi-hole web interface](https://i.imgur.com/NJ3v4TT.jpg)
 
 ##What you will need
 - Raspberry Pi 3 and its power supply
