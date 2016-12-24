@@ -1,6 +1,6 @@
 #Installing and configuring Pi-hole v2.10 on the Raspberry Pi 3
 
-Written 22 Dec 2016 by @ningxinzhu ... though you can find most of this on [the Pi-hole FAQ, especially its page about pihole commands](https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738), /r/raspberry_pi, and /r/pihole. Thank God for good documentation and reddit.
+Written 24 Dec 2016 by @ningxinzhu ... though you can find most of this on [the Pi-hole FAQ, especially its page about pihole commands](https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738), /r/raspberry_pi, and /r/pihole. Thank God for good documentation and reddit.
 
 [My Pi-hole web interface](https://i.imgur.com/NJ3v4TT.jpg)
 
@@ -11,16 +11,17 @@ Written 22 Dec 2016 by @ningxinzhu ... though you can find most of this on [the 
   - Raspbian takes up almost 4 GB so although a 4 GB microSD card will work, 8 GB will give you more peace of mind that Pi-hole can do what it needs to do.
 - an adapter so that you can format said microSD card to FAT32 using a computer
 - Ethernet cable
-- USB keyboard and mouse
-  - If it's not a QWERTY keyboard with **all** of the keys normally found on a keyboard, Pi-hole can still be installed but it will take much longer. I learned this the hard way.
+- USB keyboard and USB mouse, or USB mouse and SSH and VNC
+  - If you enable SSH and VNC as soon as Raspbian Jessie is installed, you can control the Pi remotely using the keyboard and mouse on your computer. Otherwise not having a full-size USB keyboard makes running commands much more difficult.
 - HDMI monitor
 - a router to which you have admin access
 
 ##Installation
-- Format the microSD card to FAT32 using [SDFormatter](https://www.sdcard.org/downloads/formatter_4/), Disk Utility on OS X, or gparted on Linux.
-- Download [NOOBS](https://www.raspberrypi.org/downloads/noobs/) and unzip it to the root of your microSD card.
+- Format the microSD card to FAT using [SDFormatter](https://www.sdcard.org/downloads/formatter_4/), Disk Utility on OS X, or gparted on Linux.
+- Download [the offline NOOBS installer](https://www.raspberrypi.org/downloads/noobs/) and unzip it to the root of your microSD card.
 - Insert the microSD card into the Pi. Connect the Pi to your router using an Ethernet cable. Connect the keyboard/mouse/monitor to the Pi.
-- Connect the Pi with a power outlet using the power supply; the Pi will now boot. Install Raspbian (Jessie, not Lite) by following the on-screen instructions.
+- Connect the Pi with a power outlet using the power supply; this should always be the last peripheral to be connected because the Pi will now boot. Install Raspbian (Jessie, not Lite) by following the on-screen instructions.
+  - Lite does not have a desktop environment; consequently, getting the Pi to boot straight into the desktop logged in as pi@raspberrypi requires additional work.
 - Enable SSH and VNC in Preferences.
 - Run `curl -sSL https://install.pi-hole.net | bash`.
 - Run `git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole` in Terminal to clone the Pi-hole repository on Github to your Pi.
@@ -30,7 +31,7 @@ Written 22 Dec 2016 by @ningxinzhu ... though you can find most of this on [the 
   - Remember to enable IPv6!
 - When the installation is complete, copy down the IPv4 and IPv6 addresses that you will direct your router to use as a DNS server. Also copy down the address of the Pi-hole web interface and the currently set password.
 - Log into your router's admin dashboard (default directions to which are often found on the bottom of a router) and modify the DNS settings so that it uses your Pi-hole as a DNS server.
-  - I did not set an alternate DNS server but you can use 8.8.8.8 which is Google's.
+  - I did not set an alternate DNS server but you can use 8.8.8.8 and 8.8.4.4 which are Google's.
   - Some routers need a restart after changing the DNS settings.
 - Run `pihole enable` and then `pihole status` to make sure DNS blocking is working. You can also see that it is working from the web interface.
 - You need the password which was setup during installation to do anything besides view the basic DNS blocking statistics in the web interface, but you can change that password by running `pihole -a -p TYPE_YOUR_NEW_PASSWORD_HERE_INSTEAD_OF_THIS_PLACEHOLDER_TEXT` in Terminal. Running just `pihole -a -p` removes the password entirely and anyone on the network can modify Pi-hole if they know the address of the web interface.
