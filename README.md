@@ -82,7 +82,7 @@ https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/_raw__h
 - Again, CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
 - Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
-- The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673). You can also whitelist any domain which has accidentally been blocked; for instance, I whitelisted mp.weixin.qq.com because websites that I accessed from within WeChat would not load.
+- The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673).
 - Optional: in the web interface, you can add these domains to the blacklist in order to try and block ads on YouTube, but YMMV (it didn't block any YouTube ads for me):
 ```
 r4---sn-vgqs7nez.googlevideo.com
