@@ -8,13 +8,18 @@ Written 24 Dec 2016 by @ningxinzhu ... though you can find most of this on [the 
 - Raspberry Pi 3 and its power supply
   - I put a case and two heatsinks on my Pi in case it gets too hot.
 - microSD card
-  - Raspbian takes up almost 4 GB so although a 4 GB microSD card will work, 8 GB will give you more peace of mind that Pi-hole can do what it needs to do.
+  - Raspbian Jessie takes up almost 4 GB so although a 4 GB microSD card will work, 8 GB will give you more peace of mind that Pi-hole can do what it needs to do.
 - an adapter so that you can format said microSD card to FAT32 using a computer
 - Ethernet cable
 - USB keyboard and USB mouse, or USB mouse and SSH and VNC
   - If you enable SSH and VNC as soon as Raspbian Jessie is installed, you can control the Pi remotely using the keyboard and mouse on your computer. Otherwise not having a full-size USB keyboard makes running commands much more difficult.
 - HDMI monitor
 - a router to which you have admin access
+
+I would strongly recommend having the following applications installed on your computer as well:
+- [Nmap](https://nmap.org/download.html), to determine the IP address of and open ports on your Pi
+- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), an SSH client
+- [RealVNC VNC Viewer](https://www.realvnc.com/download/viewer/)
 
 ##Installation
 - Format the microSD card to FAT using [SDFormatter](https://www.sdcard.org/downloads/formatter_4/), Disk Utility on OS X, or gparted on Linux.
