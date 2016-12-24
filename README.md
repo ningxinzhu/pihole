@@ -30,7 +30,7 @@ I would strongly recommend having the following applications installed on your c
   - Usually this is when I switch over to to VNC for the rest of the installation and configuration. Use Nmap to figure out the IP address of the Pi.
 - The simplest method of installing Pi-hole is to run `curl -sSL https://install.pi-hole.net | bash` in Terminal, but doing this is the equivalent of running an .exe file of unknown origin on Windows and giving it administrator access. I usually choose to clone the Pi-hole repository using git, have a look at what's inside, and then run the installer script myself. Do this by running `git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole` in Terminal.
 - Navigate to /home/pi/Pi-hole/automated install/ in File Manager and copy the script basic-install.sh to /home/pi/ (or any other location that is easy to type into Terminal).
-- Run `bash /home/pi/basic-install.sh` in Terminal; the Pi-hole installer will now run.
+- Run `sudo bash /home/pi/basic-install.sh` in Terminal; the Pi-hole installer will now run.
   - 'Do you want to use your current network settings as a static address?' YES.
   - Remember to enable IPv6!
 - When the installation is complete, copy down the IPv4 and IPv6 addresses that you will direct your router to use as a DNS server. Also copy down the address of the Pi-hole web interface and the currently set password.
