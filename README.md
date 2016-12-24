@@ -21,6 +21,8 @@ Written 22 Dec 2016 by @ningxinzhu ... though you can find most of this on [the 
 - Download [NOOBS](https://www.raspberrypi.org/downloads/noobs/) and unzip it to the root of your microSD card.
 - Insert the microSD card into the Pi. Connect the Pi to your router using an Ethernet cable. Connect the keyboard/mouse/monitor to the Pi.
 - Connect the Pi with a power outlet using the power supply; the Pi will now boot. Install Raspbian (Jessie, not Lite) by following the on-screen instructions.
+- Enable SSH and VNC in Preferences.
+- Run `curl -sSL https://install.pi-hole.net | bash`.
 - Run `git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole` in Terminal to clone the Pi-hole repository on Github to your Pi.
 - Navigate to /home/pi/Pi-hole/automated install/ in File Manager and copy the script basic-install.sh to /home/pi/ (or any other location that is easy to type into Terminal).
 - Run `bash /home/pi/basic-install.sh` in Terminal; the Pi-hole installer will now run.
