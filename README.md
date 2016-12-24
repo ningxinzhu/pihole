@@ -71,7 +71,7 @@ https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/_raw__hosts.txt
 ```
 - CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
-- Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist).
+- Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt).
   - The good news is that you can easily add domains to the whitelist in the Pi-hole web interface, but you can't add more than one domain at once there, so it's good to know how to do it in Terminal (or through PuTTY / SSH) for the initial configuration.
 - Again, CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
