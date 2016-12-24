@@ -1,10 +1,26 @@
-msftncsi.com #Microsoft Internet connectivity#
-*.msftncsi.com #Microsoft Internet connectivity#
-www.msftncsi.com #Microsoft Internet connectivity#
+#Microsoft (connectivity, Office, Skype)
+msftncsi.com
+*.msftncsi.com
+www.msftncsi.com
+officeclient.microsoft.com
+gateway.messenger.live.com
+ui.skype.com
+pricelist.skype.com
+apps.skype.com
+m.hotmail.com
+s.gateway.messenger.live.com
+sa.symcb.com
+s{1..5}.symcb.com
+
+#Google (Play Services, Chrome extensions, YouTube history)
 clients2.google.com
 clients3.google.com
 clients4.google.com
 clients5.google.com
+id.google.ca
+video-stats.l.google.com
+s.youtube.com
+
 bit.ly
 t.co
 goo.gl
@@ -13,6 +29,5 @@ puu.sh
 dl.dropbox.com
 tomshardware.com
 alluremedia.com
-cdn.embedly.com #reddit's embedded media#
-mp.weixin.qq.com #WeChat articles#
-id.google.ca #Chrome extensions#
+cdn.embedly.com
+mp.weixin.qq.com
