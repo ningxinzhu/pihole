@@ -31,3 +31,4 @@ tomshardware.com
 alluremedia.com
 cdn.embedly.com
 mp.weixin.qq.com
+www.theguardian.com
