@@ -39,6 +39,7 @@ I would strongly recommend having the following applications installed on your c
   - Some routers need a restart after changing the DNS settings.
 - Run `pihole enable` and then `pihole status` to make sure DNS blocking is working. You can also see that it is working from the web interface.
 - You need the password which was setup during installation to do anything besides view the basic DNS blocking statistics in the web interface, but you can change that password by running `pihole -a -p TYPE_YOUR_NEW_PASSWORD_HERE_INSTEAD_OF_THIS_PLACEHOLDER_TEXT` in Terminal. Running just `pihole -a -p` removes the password entirely and anyone on the network can modify Pi-hole if they know the address of the web interface.
+- Optional: I often install [htop](https://hisham.hm/htop/), which is like Task Manager on Windows, on the Pi as well to view processes. You can install it by running `sudo apt-get install htop` in Terminal.
 
 ##Configuration of adlists and whitelist
 - Run `sudo cp /etc/pihole/adlists.default /etc/pihole/adlists.list` in Terminal. What this does is it copies the contents of the file adlists.default into a new file called adlists.list, which are both located in /etc/pihole/.
