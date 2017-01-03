@@ -1,4 +1,4 @@
-#Microsoft (connectivity, Office, Skype)
+//Microsoft (connectivity, Office, Skype)
 msftncsi.com
 *.msftncsi.com
 www.msftncsi.com
@@ -12,7 +12,7 @@ s.gateway.messenger.live.com
 sa.symcb.com
 s{1..5}.symcb.com
 
-#Google (Play Services, Chrome extensions, YouTube history)
+//Google (Play Services, Chrome extensions, YouTube history)
 clients2.google.com
 clients3.google.com
 clients4.google.com
@@ -32,3 +32,4 @@ alluremedia.com
 cdn.embedly.com
 mp.weixin.qq.com
 www.theguardian.com
+graph.facebook.com
