@@ -41,7 +41,7 @@ I would strongly recommend having the following applications installed on your c
 - You need the password which was setup during installation to do anything besides view the basic DNS blocking statistics in the web interface, but you can change that password by running `pihole -a -p TYPE_YOUR_NEW_PASSWORD_HERE_INSTEAD_OF_THIS_PLACEHOLDER_TEXT` in Terminal. Running just `pihole -a -p` removes the password entirely and anyone on the network can modify Pi-hole if they know the address of the web interface.
 - Optional: I often install [htop](https://hisham.hm/htop/), which is like Task Manager on Windows, on the Pi as well to view processes. You can install it by running `sudo apt-get install htop` in Terminal.
 
-##Configuration of adlists and whitelist
+##Configuration of adlists, whitelist, blacklist
 - Run `sudo cp /etc/pihole/adlists.default /etc/pihole/adlists.list` in Terminal. What this does is it copies the contents of the file adlists.default into a new file called adlists.list, which are both located in /etc/pihole/.
 - Run `sudo nano /etc/pihole/adlists.list` so that you can add the following ad-serving domains:
 ```
@@ -79,22 +79,9 @@ https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/_raw__hosts.txt
 ```
 - CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
-- Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt).
-  - The good news is that you can easily add domains to the whitelist in the Pi-hole web interface, but you can't add more than one domain at once there, so it's good to know how to do it in Terminal (or through PuTTY / SSH) for the initial configuration.
+- Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt). Do the same for the [blacklist](https://github.com/ningxinzhu/pihole/blob/master/blacklist.txt).
+  - The good news is that you can easily add domains to the whitelist/blacklist in the Pi-hole web interface, but you can't add more than one domain at once there, so it's good to know how to do it in Terminal (or through PuTTY / SSH) for the initial configuration.
 - Again, CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
-- Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
+- Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist/blacklist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
 - The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673).
-- Optional: in the web interface, you can add these domains to the blacklist in order to try and block ads on YouTube, but YMMV (it didn't block any YouTube ads for me):
-```
-r4---sn-vgqs7nez.googlevideo.com
-r4.sn-vgqs7nez.googlevideo.com
-www.youtube-nocookie.com
-i1.ytimg.com
-r17---sn-vgqsenes.googlevideo.com
-r2---sn-vgqs7n7k.googlevideo.com
-r1---sn-vgqsen7z.googlevideo.com
-r1.sn-vgqsen7z.googlevideo.com
-r20---sn-vgqs7ne7.googlevideo.com
-r20.sn-vgqs7ne7.googlevideo.com
-```
