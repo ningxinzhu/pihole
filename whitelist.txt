@@ -33,3 +33,4 @@ cdn.embedly.com
 mp.weixin.qq.com
 www.theguardian.com
 graph.facebook.com
+portableapps.com
