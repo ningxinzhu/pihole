@@ -25,8 +25,6 @@ bit.ly
 t.co
 goo.gl
 opensubtitles.org
-puu.sh
-dl.dropbox.com
 tomshardware.com
 alluremedia.com
 cdn.embedly.com
@@ -34,3 +32,4 @@ mp.weixin.qq.com
 www.theguardian.com
 graph.facebook.com
 portableapps.com
+github.com
