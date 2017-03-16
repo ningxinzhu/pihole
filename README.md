@@ -39,7 +39,6 @@ I would strongly recommend having the following applications installed on your c
   - Some routers need a restart after changing the DNS settings.
 - Run `pihole enable` and then `pihole status` to make sure DNS blocking is working. You can also see that it is working from the web interface.
 - You need the password which was setup during installation to do anything besides view the basic DNS blocking statistics in the web interface, but you can change that password by running `pihole -a -p TYPE_YOUR_NEW_PASSWORD_HERE_INSTEAD_OF_THIS_PLACEHOLDER_TEXT` in Terminal. Running just `pihole -a -p` removes the password entirely and anyone on the network can modify Pi-hole if they know the address of the web interface.
-- Optional: I often install [htop](https://hisham.hm/htop/), which is like Task Manager on Windows, on the Pi as well to view processes. You can install it by running `sudo apt-get install htop` in Terminal.
 
 ##Configuration of adlists, whitelist, blacklist
 - Run `sudo cp /etc/pihole/adlists.default /etc/pihole/adlists.list` in Terminal. What this does is it copies the contents of the file adlists.default into a new file called adlists.list, which are both located in /etc/pihole/.
@@ -85,3 +84,11 @@ https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/_raw__h
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
 - Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist/blacklist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
 - The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673).
+- Add the following domains to the blacklist as wildcards:
+```
+k.googlevideo.com
+z.googlevideo.com
+7.googlevideo.com
+s.googlevideo.com
+e.googlevideo.com
+```
