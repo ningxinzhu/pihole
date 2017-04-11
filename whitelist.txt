@@ -20,16 +20,24 @@ clients5.google.com
 id.google.ca
 video-stats.l.google.com
 s.youtube.com
+goo.gl
 
 bit.ly
 t.co
-goo.gl
 opensubtitles.org
+www.opensubtitles.org
 tomshardware.com
 alluremedia.com
 cdn.embedly.com
 mp.weixin.qq.com
+theguardian.com
 www.theguardian.com
 graph.facebook.com
 portableapps.com
 github.com
+www.github.com
+baidu.com
+www.baidu.com
+m.baidu.com
+twitter.com
+www.twitter.com
