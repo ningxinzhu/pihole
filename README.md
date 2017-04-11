@@ -58,7 +58,6 @@ https://adblock.mahakala.is/
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://mirror.cedia.org.ec/malwaredomains/justdomains
-http://hostsfile.mine.nu/hosts0.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml
 https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt
 https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
