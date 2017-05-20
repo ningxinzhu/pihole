@@ -1,6 +1,8 @@
 www.youtube-nocookie.com
 i1.ytimg.com
 clients6.google.com
+gfwsl.geforce.com
+services.gfe.nvidia.com
 yt.moatads.com
 01enhancedbuyer02.site
 adpree.com
