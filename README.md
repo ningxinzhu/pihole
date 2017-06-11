@@ -75,6 +75,7 @@ https://raw.githubusercontent.com/StevenBlack/hosts/master/data/SpotifyAds/hosts
 http://someonewhocares.org/hosts/zero/hosts
 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/_raw__hosts.txt
+https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_all.list
 ```
 - CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt). Do the same for the [blacklist](https://github.com/ningxinzhu/pihole/blob/master/blacklist.txt).
