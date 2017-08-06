@@ -80,8 +80,6 @@ https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
 https://v.firebog.net/hosts/Shalla-mal.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
 https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
-https://github.com/chadmayfield/pihole-blocklists/raw/master/lists/pi_blocklist_porn_all.list
-https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 ```
 - CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt). Do the same for the [blacklist](https://github.com/ningxinzhu/pihole/blob/master/blacklist.txt).
