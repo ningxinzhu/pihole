@@ -88,11 +88,12 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
 - Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist/blacklist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
 - The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673).
-- Add the following domains to the blacklist as wildcards:
+- Add the following domains to the blacklist as wildcards (pihole -wild):
 ```
 k.googlevideo.com
 z.googlevideo.com
 7.googlevideo.com
 s.googlevideo.com
 e.googlevideo.com
+adsense.com adblade.com 207.net 247realmedia.com 2mdn.net 2o7.net 33across.com abmr.net adbrite.com adbureau.net adchemy.com addthis.com addthisedge.com admeld.com admob.com adsonar.com advertising.com afy11.net aquantive.com atdmt.com atwola.com channelintelligence.com cmcore.com coremetrics.com crowdscience.com decdna.net decideinteractive.com doubleclick.com doubleclick.net esomniture.com fimserve.com flingwebads.com foxnetworks.com googleadservices.com googlesyndication.com google-analytics.com gravity.com hitbox.com imiclk.com imrworldwide.com insightexpress.com insightexpressai.com intellitxt.com invitemedia.com leadback.com lindwd.net mookie1.com myads.com netconversions.com nexac.com nextaction.net nielsen-online.com offermatica.com omniture.com omtrdc.net pm14.com quantcast.com quantserve.com realmedia.com revsci.net rightmedia.com rmxads.com ru4.com rubiconproject.com samsungadhub.com scorecardresearch.com sharethis.com shopthetv.com acoda.net targetingmarketplace.com themig.com trendnetcloud.com yieldmanager.com yieldmanager.net yldmgrimg.net youknowbest.com yumenetworks.com
 ```
