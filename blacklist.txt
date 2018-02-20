@@ -1,3 +1,9 @@
+zenmxapps.com
+*.zenmxapps.com
+www.zenmxapps.com
+zenjoy.net
+*.zenjoy.net
+www.zenjoy.net
 videoxsearch.com                                                        
 xvideos.com                                                             
 pornhub.com                                                             
