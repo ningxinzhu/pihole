@@ -52,7 +52,6 @@ https://v.firebog.net/hosts/static/w3kbl.txt
 https://adaway.org/hosts.txt
 https://v.firebog.net/hosts/AdguardDNS.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://hosts-file.net/ad_servers.txt
 https://v.firebog.net/hosts/Easylist.txt
 https://raw.githubusercontent.com/CHEF-KOCH/Spotify-Ad-free/master/Spotifynulled.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
