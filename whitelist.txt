@@ -14,8 +14,3 @@ android.clients.google.com
 0.docs.google.com
 csi.gstatic.com
 mp.weixin.qq.com
-prod.imgur.map.fastlylb.net
-drive.google.com
-stitcher.com
-*.stitcher.com
-www.stitcher.com
