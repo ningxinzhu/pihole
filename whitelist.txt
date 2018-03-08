@@ -14,3 +14,6 @@ android.clients.google.com
 0.docs.google.com
 csi.gstatic.com
 mp.weixin.qq.com
+stitcher.com
+*.stitcher.com
+www.stitcher.com
