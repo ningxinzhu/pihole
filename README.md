@@ -68,7 +68,6 @@ https://hosts-file.net/exp.txt
 https://hosts-file.net/emd.txt
 https://hosts-file.net/psh.txt
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
-https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://v.firebog.net/hosts/Prigent-Phishing.txt
