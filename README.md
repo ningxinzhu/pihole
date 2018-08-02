@@ -4,7 +4,7 @@ Written 24 Dec 2016 by @ningxinzhu ... though you can find most of this on [the 
 
 [My Pi-hole web interface](https://i.imgur.com/NJ3v4TT.jpg)
 
-##What you will need
+## What you will need
 - Raspberry Pi 3 and its power supply
   - I put a case and two heatsinks on my Pi in case it gets too hot.
 - microSD card
@@ -20,7 +20,7 @@ I would strongly recommend having the following applications installed on your c
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), an SSH client
 - [RealVNC VNC Viewer](https://www.realvnc.com/download/viewer/)
 
-##Installation
+## Installation
 - Format the microSD card to FAT using [SDFormatter](https://www.sdcard.org/downloads/formatter_4/), Disk Utility on OS X, or gparted on Linux.
 - Download [the offline NOOBS installer](https://www.raspberrypi.org/downloads/noobs/) and unzip it to the root of your microSD card.
 - Insert the microSD card into the Pi. Connect the Pi to your router using an Ethernet cable. Connect the keyboard/mouse/monitor to the Pi.
@@ -40,7 +40,7 @@ I would strongly recommend having the following applications installed on your c
 - Run `pihole enable` and then `pihole status` to make sure DNS blocking is working. You can also see that it is working from the web interface.
 - You need the password which was setup during installation to do anything besides view the basic DNS blocking statistics in the web interface, but you can change that password by running `pihole -a -p TYPE_YOUR_NEW_PASSWORD_HERE_INSTEAD_OF_THIS_PLACEHOLDER_TEXT` in Terminal. Running just `pihole -a -p` removes the password entirely and anyone on the network can modify Pi-hole if they know the address of the web interface.
 
-##Configuration of adlists, whitelist, blacklist
+## Configuration of adlists, whitelist, blacklist
 - Run `sudo cp /etc/pihole/adlists.default /etc/pihole/adlists.list` in Terminal. What this does is it copies the contents of the file adlists.default into a new file called adlists.list, which are both located in /etc/pihole/.
 - Run `sudo nano /etc/pihole/adlists.list` so that you can add the following ad-serving domains:
 ```
