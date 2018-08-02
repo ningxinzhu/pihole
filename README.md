@@ -1,4 +1,4 @@
-#Installing and configuring Pi-hole v2.10 on the Raspberry Pi 3
+# Installing and configuring Pi-hole v2.10 on the Raspberry Pi 3
 
 Written 24 Dec 2016 by @ningxinzhu ... though you can find most of this on [the Pi-hole FAQ, especially its page about pihole commands](https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738), /r/raspberry_pi, and /r/pihole. Thank God for good documentation and reddit.
 
