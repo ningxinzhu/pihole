@@ -18,3 +18,4 @@ stitcher.com
 *.stitcher.com
 www.stitcher.com
 ssl.gstatic.com
+youtube-ui.l.google.com
