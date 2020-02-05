@@ -1,5 +1,6 @@
 mp.weixin.qq.com
 api.rollbar.com
 cdn.permutive.com
+dashboard.tinypass.com
 app.launchdarkly.com
 events.launchdarkly.com
