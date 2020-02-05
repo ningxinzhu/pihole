@@ -44,38 +44,8 @@ I would strongly recommend having the following applications installed on your c
 - Run `sudo cp /etc/pihole/adlists.default /etc/pihole/adlists.list` in Terminal. What this does is it copies the contents of the file adlists.default into a new file called adlists.list, which are both located in /etc/pihole/.
 - Run `sudo nano /etc/pihole/adlists.list` so that you can add the following ad-serving domains:
 ```
-https://hosts-file.net/grm.txt
-https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Spam/hosts
-https://v.firebog.net/hosts/static/w3kbl.txt
-https://adaway.org/hosts.txt
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://v.firebog.net/hosts/Easylist.txt
-https://raw.githubusercontent.com/CHEF-KOCH/Spotify-Ad-free/master/Spotifynulled.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
-https://v.firebog.net/hosts/Airelle-trc.txt
-https://v.firebog.net/hosts/Easyprivacy.txt
-https://v.firebog.net/hosts/Prigent-Ads.txt
-https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.2o7Net/hosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tyzbit/hosts
-https://v.firebog.net/hosts/Airelle-hrsk.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-https://mirror1.malwaredomains.com/files/justdomains
-https://hosts-file.net/exp.txt
-https://hosts-file.net/emd.txt
-https://hosts-file.net/psh.txt
-https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
-https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
-https://v.firebog.net/hosts/Prigent-Malware.txt
-https://v.firebog.net/hosts/Prigent-Phishing.txt
-https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
-https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
-https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+https://dbl.oisd.nl/
+https://porn.oisd.nl
 ```
 - CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Run `sudo nano /etc/pihole/whitelist.txt` so that you can [add domains to the whitelist](https://github.com/ningxinzhu/pihole/blob/master/whitelist.txt). Do the same for the [blacklist](https://github.com/ningxinzhu/pihole/blob/master/blacklist.txt).
@@ -83,13 +53,4 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 - Again, CTRL-O to save the file; nano also asks you the filepath to save it to (leave it the same).
 - Remove the adlists.default file that you copied earlier by running `sudo rm /etc/pihole/adlists.default`. It's okay because you just made a much more comprehensive adlists file that includes all of the information in the one you just deleted.
 - Run `pihole -g` to update Pi-hole with the new list of ad-serving domains and the new whitelist/blacklist. Some of these adlists are gigantic so don't be alarmed if Terminal doesn't seem to display any activity at times - things are still being updated.
-- The web interface should now show an absolutely massive number of domains being blocked (mine is currently 923673).
-- Add the following domains to the blacklist as wildcards (pihole -wild):
-```
-k.googlevideo.com
-z.googlevideo.com
-7.googlevideo.com
-s.googlevideo.com
-e.googlevideo.com
-adsense.com adblade.com 207.net 247realmedia.com 2mdn.net 2o7.net 33across.com abmr.net adbrite.com adbureau.net adchemy.com addthis.com addthisedge.com admeld.com admob.com adsonar.com advertising.com afy11.net aquantive.com atdmt.com atwola.com channelintelligence.com cmcore.com coremetrics.com crowdscience.com decdna.net decideinteractive.com doubleclick.com doubleclick.net esomniture.com fimserve.com flingwebads.com foxnetworks.com googleadservices.com googlesyndication.com google-analytics.com gravity.com hitbox.com imiclk.com imrworldwide.com insightexpress.com insightexpressai.com intellitxt.com invitemedia.com leadback.com lindwd.net mookie1.com myads.com netconversions.com nexac.com nextaction.net nielsen-online.com offermatica.com omniture.com omtrdc.net pm14.com quantcast.com quantserve.com realmedia.com revsci.net rightmedia.com rmxads.com ru4.com rubiconproject.com samsungadhub.com scorecardresearch.com sharethis.com shopthetv.com acoda.net targetingmarketplace.com themig.com trendnetcloud.com yieldmanager.com yieldmanager.net yldmgrimg.net youknowbest.com yumenetworks.com
-```
+- The web interface should now show an absolutely massive number of domains being blocked.
