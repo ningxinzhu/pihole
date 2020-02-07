@@ -1,4 +1,5 @@
 mp.weixin.qq.com
+www.tosc.it
 api.rollbar.com
 cdn.permutive.com
 dashboard.tinypass.com
