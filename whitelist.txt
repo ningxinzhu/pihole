@@ -1,10 +1,5 @@
 mp.weixin.qq.com
-archiveofourown.org
-api.rollbar.com
-cdn.permutive.com
 dashboard.tinypass.com
-www.tosc.it
-app.launchdarkly.com
-events.launchdarkly.com
-c.paypal.com
-t.paypal.com
+worldometers.info
+*.worldometers.info
+www.worldometers.info
